@@ -7,12 +7,17 @@
     <title>landing-page
     </title> 
     <link rel="stylesheet" href='style.css'>
+    <link rel="stylesheet" href="assets/media.css">
 </head>
 <body>
     <header>
             <img src="./assets/Captura de pantalla 2023-05-04 191749.jpg" class="logo" alt="logo de alicia averturas"> 
 
      <nav class="navbar">
+        <label for="menu-toggle" class="menu-label">
+            <img src="./assets/Menú-hamburguesa-herramienta-practica-o-icono-inutil-900x753.png" alt="" class="menu-icon">
+        </label>
+        <input type="checkbox" id="menu-toggle">
         <ul class="navbar-list">
             <li><a href="#">sobre nosotros</a></li>
             <li><a href="#">nuestros proyectos</a></li>
@@ -20,7 +25,55 @@
             <li><a href="#">contactanos</a></li>
         </ul>
         <img class="carrito" src="./assets/kisspng-.jpg" alt="">
+        <label for="cart-toggle" class="cart-label">
+            <img src="./assets/kisspng-.jpg" alt="" class="carrito">
+        </label>
+        <input type="checkbox" id="cart-toggle">
      </nav>
-    </header>    
+    </header> 
+    <main>
+        <section id="hero">
+            <div class="hero-info">
+                <h1>ABRI TUS ESPACIOS</h1>
+                <h2>quienes somos...</h2>
+                <p>Somos una empresa familiar, preocupada por las necesidades de nuestros clientes. Cada trabajo se convierte en un desafio, cuando encaramos su realizacion. Nuestra constante es la busqueda de la excelencia.</p>
+                
+        </div>
+            <div class="hero-card"><img src="./assets/Captura de pantalla 2023-05-04 192610.jpg" alt="">
+            </div>
+        </section>
+      <section id="info-cards">
+        <h2>💼por que trabajar con nosotros...</h2>
+        <div class="info-cards-container">
+            <div class="cards"><img src="./assets/cerramiento1.jpg" alt="">
+            <h3>realizamos cerramientos en general (balcones, quinchos, frente local etc,) 🔨🏗</h3></div>
+            <div class="cards"><img src="./assets/ventana-standar100x090-1.jpg" alt="">
+            <h3>mejor calidad en medidas standar 👓✏</h3></div>
+            <div class="cards"><img src="./assets/curvas_formas.jpg" alt="">
+            <h3>trabajos 100% a medida 📏📐</h3></div>
+        </div>
+
+    </section>
+    </main>   
+    <footer>
+        <div class="footer-card-container">
+        <div class="footer-card">
+            <h3>📌contacto</h3>
+            <p>🌎Velez Sarfield 1030, Avellaneda,</p>
+            <p>📨pinedadairo@gmail.com</p>
+            <p>📞15 3411 3416</p>
+        </div>
+    </div>
+        
+        <div>
+            <ul class="footer-links">
+                <li>📜<a href="#">Términos de uso</a></li>
+                <li>📈<a href="#">Trabajá con nosotros</a></li>
+                <li>⚙<a href="#">Soporte</a></li>
+
+            </ul>
+        </div>
+        <p class="copy">atencion! aviso de copyright © todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>

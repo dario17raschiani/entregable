@@ -13,6 +13,7 @@ list-style-type: none;}
     --fondo-2: color: rgb(23,8,73)
     --fondo-3:#6C5651
     --color-fuente: rgb(234, 245, 250)
+    --fonfo-4: color:rgb(1234,561,31)
 }
 header {
     padding: 0%,30%;
@@ -21,7 +22,7 @@ header {
     align-items: center;
     display: flex;
     height: 75px;
-    background: rgb(51, 37, 32);
+    background-color:black;
     position: fixed;
     top: o;
     z-index: 2;
@@ -53,3 +54,217 @@ header {
 .navbar-list{gap: 30px;}
 .navbar-list a {
     color: var(--color-primario)}
+
+    main{
+        background:rgb(151, 207, 233);
+        display: flex;
+        flex-direction: column;
+        align-items:center ;
+        justify-content: center;
+        width: 100%;
+        color: rgb(0, 0, 0);
+    } 
+    #hero{
+        margin-top: 75px;
+        padding: 70px 0;
+        max-width: 1200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        
+       
+    }
+    .hero-info{
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+    }
+    .hero-info h1{
+        font-weight: 800;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        
+    }
+    .hero-card{
+        width: 60%;
+        
+    }
+    .hero-info p{ font-weight: 800;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    margin-left: 30px;}
+    
+        .hero-info h2{  font-weight: 800;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px
+            }
+            #info-cards{
+                padding: 70px 0;
+                max-width: 1200px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 80px;
+            }
+            #info-cards h2{
+                font-size: 20px;
+                font-weight: 800;
+            }
+            .info-cards-container{
+                display: flex;
+                justify-content: space-around;
+                align-items: flex-start;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+            .cards{
+                width: 300px;
+                height: 290px;
+                padding: 40px 30px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                background-color: gray;
+                border-radius: 10px;
+                gap: 10px;
+            }
+            .cards img{
+                width: 160px;
+            }
+            .cards h3{
+                font-weight: 600;
+                font-size: 14px;
+            }
+            .footer-card{
+                width: 300px;
+                height: 290px;
+                padding: 40px 30px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                background-color: gray;
+                border-radius: 10px;
+                gap: 10px;
+            }
+            .footer-card-container{
+                padding: 20px 0;
+                max-width: 1200px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 80px;
+            }
+            .hero-card img{
+                width: 500px;
+            }
+            .footer-links{
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+            }
+            .copy{
+                margin-top: 20px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            } 
+            @keyframes  fade {
+                from{ opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+
+            
+            
+            @keyframes slide-up {
+                from {
+                    transform: translateY(100px) ;
+                }
+                to{
+                    transform: translateY(0);
+                }
+            }
+            @keyframes slide-right{
+                from{
+                    transform: translateX(100px);
+                }
+                to{
+                    transform: translateX(0);
+                }
+            }
+            .hero-info h1,h2 {
+                animation: fade 1s ease-in, slide-up 1.3s ease-in-out;
+            }
+            .hero-info p {
+                opacity: 0;
+                
+                animation: fade 0.8s ease-in forwards, slide-up 0.9s ease-in-out;
+                animation-delay: 0.3s;
+
+            }
+            .hero-card{
+                opacity: 0;
+                animation: fade 1s ease-in forwards, slide-right 1.3s ease-in-out;
+                animation-delay: 0.2s;
+            }
+            .info-cards-container img{
+                transition: all 0.3s linear;
+            }
+            .info-cards-container img:hover
+             {transform: scale(1.15);
+                transition: all 0.3s linear;
+            }
+            @keyframes blink {
+                to {
+                    background: transparent;
+                    opacity: 0;
+                }
+            }
+            @keyframes typ {
+                to {
+                    left: 100%;
+                }
+            } 
+            .hero-info h1{
+                background-color: black;
+                position: relative;
+                background-clip: text;
+                color: transparent;
+                -webkit-background-clip: text;
+            }
+            .hero-info h1::before, .hero-info h1::after{
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+
+            }
+            .hero-info h1 ::before{
+                background-color: aqua;
+                animation: t 1.2s 1.4s steps(10) infinite;
+            }
+            .hero-info h1 ::after{
+                width: 1rem;
+                background-color: black;
+                animation: typewriter 1.2s 1.4s steps(10) infinite;
+            }
+            #menu-toggle,#carttoggle,.menu-label{
+                display: none;
+            }
