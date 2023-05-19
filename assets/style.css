@@ -258,7 +258,7 @@ header {
             }
             .hero-info h1 ::before{
                 background-color: aqua;
-                animation: t 1.2s 1.4s steps(9) infinite;
+                animation: t 1.2s 1.4s steps(8) infinite;
             }
             .hero-info h1 ::after{
                 width: 1rem;
